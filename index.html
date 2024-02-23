@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="contact">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Search..." id="search-input"/>
+        <a href="#"
+          ><i class="fa-solid fa-magnifying-glass" id="magnifying-glass"></i
+        ></a>
+      </div>
+    </header>
+
+    <section>
+      <div class="content">
+        <a href="#">Codehal</a>
+        <h2>Welcome!</h2>
+        <h3>To Our Nem Website</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore et,
+          est aut quos iure dicta autem doloribus aperiam vero.
+        </p>
+        <div class="icon">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+      <div class="login">
+        <h3>Sign In</h3>
+        <div class="input">
+          <input type="email" placeholder="Email" />
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="input">
+          <input type="password" placeholder="Password" />
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="remember">
+          <span><input type="checkbox" id="check"/> <label for="check">Remember me</label></span>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button>Sign In</button>
+        <p>Don't have an account? <a href="#">Sign Up</a></p>
+      </div>
+    </section>
+    <script>
+        let glass = document.getElementById('magnifying-glass')
+        let input = document.querySelector('#search-input')
+        $('#magnifying-glass').click(() => {
+          $('#search-input').toggle('slow')
+        })
+    </script>
+  </body>
+</html>

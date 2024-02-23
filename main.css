@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: white;
+}
+body {
+    min-height: 100vh;
+    background: url('img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+header a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .1s linear;
+    text-transform: uppercase;
+}
+header a:hover {
+    color: crimson;
+}
+header i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 9px;
+}
+
+header .search {
+    border: 2px solid #fff;
+    position: relative;
+    border-radius: 7px;
+    padding: 8px;
+}
+
+header .search input {
+    background: transparent;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    padding: 0 7px;
+}
+
+::placeholder {
+    color: #fff;
+}
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 75%;
+    background: url(./img.jpg) no-repeat center / cover;
+    display: flex;
+    border-radius: 10px;
+}
+.content {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    width: 700px;
+    padding: 90px;
+    text-align: center;
+    line-height: 35px;
+}
+.content h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.content h3 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.content a {
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: translate(-180px, -90px);
+    transition: 0.1s linear;
+}
+.content > a:hover {
+    color: crimson;
+}
+.content .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 25px;
+}
+.content .icon i {
+    cursor: pointer;
+    transition: .15s linear;
+}
+.content .icon i:hover {
+    color: crimson;
+}
+.login {
+    width: calc(100% - 700px);
+    padding: 100px 30px;
+    backdrop-filter: blur(15px);
+}
+.login h3 {
+    font-size: 40px;
+    text-align: center;
+}
+.login .input {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 40px;
+}
+.login .input input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 18px;
+    padding: 0 30px 0 0;
+}
+.login .input i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    font-size: 18px;
+}
+.login .input input::placeholder {
+    font-size: 18px;
+}
+.login .remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+.login a {
+    text-decoration: none;
+}
+.login a:hover {
+    text-decoration: underline;
+}
+.login input[type=checkbox] {
+    accent-color: crimson;
+    transform: scale(1.25);
+}
+.login button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: .1s linear;
+}
+.login button:active {
+    opacity: 0.75;   
+}
+.login button:hover {
+    background-color: rgb(181, 17, 50);
+}
+.login > p {
+    text-align: center;
+    font-size: 18px;
+}
